@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=rowan@400&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Egwali Arts - Home </title>
+</head>
+
+<body>    
+
+    <header>
+        <nav>
+            <span class="logo">Egwali <br> Arts</span>
+            <div class="centered">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#artworks" class="passive">Artworks</a></li>
+                <li><a href="#about_the_artist" class="passive">About the Artist</a></li>
+                <li><a href="#contact" class="passive">Contact</a></li>
+            </div>
+            <img src="Pictures/Togglemenu.png" alt="menu button" width="10%" onclick="openNav()">
+
+            <div id="dropdown">
+                <span onclick="closeNav()" class="closebtn">&times</span>
+                <div class="dropdown_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#artworks">Artworks</a></li>
+                    <li><a href="#about_the_artist">About the Artist</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+                <div class="contact_list">
+                    <a href="tel:+2348035844774"><ion-icon name="call-outline"></ion-icon></a>
+                    <a href="https://wa.me/2348035844774"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="mailto:egwalifranklyn@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div class="backgroundimage">
+            <h1>Welcome to <br> <span class="break">EGWALI ARTS</span></h1>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Artworks</h1>
+        <section class="types_of_works" id="artworks">
+
+            <a href="sketches.html">Drawings<h3>Click here</h3></a>
+            <a href="bronze.html">Bronzes<h3>Click here</h3></a>
+            <a href="fibre_glass.html">Fibre glass<h3>Click here</h3></a>
+        </section>
+
+
+        <section class="about_the_artist" id="about_the_artist">
+
+            <img src="/Pictures/Prof_Eguali.jpg">
+            <div>
+                <h1>About&nbsp;the&nbsp;Artist</h1>
+                <p>Professor Franklyn Chu Egwali is a Professor of Fine Arts with emphasis on sculpture.
+                    He is a Nigerian Contemporary artist that has been practicing his craft for more than 40 years.
+                    Egwali have travelled round and have been interfacing with art lovers, art collectors, art
+                    historians
+                    and researchers interested in African contemporary masks, which he refers to as Entities. His
+                    sculptures
+                    are made of metals, fiberglass, wood, and bronze and in these materials he explores and appraises
+                    issues
+                    tehat confront his society. Egwali has the propensity and expertise to produce African traditional
+                    and
+                    contemporary
+                    art both in two and three dimensions, develop and deliver ancient/traditional African sculptures in
+                    various materials. Egwali Franklyn also conduct workshops and training on sculpture. He has written
+                    and published over fifty scholarly papers and held several solo and group art exhibitions. Egwali
+                    Franklyn
+                    holds a Bachelor of Fine Arts (BA)degree from the University of Benin, Master of Art History (MA)
+                    from
+                    Delta
+                    State University, Abraka, Master of Fine Arts (MFA) and a PhD in Visual Arts (Sculpture) from the
+                    University
+                    of Benin, Nigeria. Egwali Franklyn is married to Professor Annie Egwali and they are blessed with
+                    children.</p>
+            </div>
+        </section>
+
+    </main>
+<a href="mailto:egwalifranklyn@gmail.com" class="gmail">
+    <ion-icon name="mail-outline"></ion-icon></a>
+
+    <footer>
+        <div class="contact_list" id="contact">
+            <a href="tel:+2348035844774"><ion-icon name="call-outline"></ion-icon></a>
+            <a href="https://wa.me/2348035844774"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="mailto:egwalifranklyn@gmail.comhttps://wa.me/2348035844774"><ion-icon name="mail-outline"></ion-icon></a>
+        </div>
+        <h4>©2024 Egwali Arts, A Franklyn Chu Egwali Venture</h4>
+        <h5>All rights reserved</h5>
+    </footer>
+</body>
+
+<script>
+
+    function openNav() {
+        document.getElementById("dropdown").style.display = "initial";
+    }
+    function closeNav() {
+        document.getElementById("dropdown").style.display = "none";
+    }
+
+</script>
+
+</html>

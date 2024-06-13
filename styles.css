@@ -1,0 +1,512 @@
+/* Developed by Monarch creative hub */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+/* HEADER  */
+
+
+header nav {
+    padding-top: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header nav .centered {
+    display: flex;
+}
+
+header nav li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 5px;
+}
+
+header nav li .passive {
+    text-decoration: none;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    position: relative;
+    padding-bottom: 22px;
+}
+
+header nav li .passive::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 1.6px;
+    width: 0%;
+    left: 10px;
+    bottom: 15.5px;
+    transition: 0.3s;
+}
+
+header nav li a:hover::after {
+    width: 80%;
+}
+
+.active {
+    border-bottom: 2px #fff solid;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 4px;
+}
+
+/* DROPDOWN */
+header nav #dropdown {
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    display: none;
+    animation: slide_in linear forwards 400ms;
+}
+
+@keyframes slide_in {
+    0% {
+        opacity: 0;
+        right: 200px;
+    }
+
+    50% {
+        opacity: 0.5;
+        right: 100px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+header nav #dropdown .closebtn {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+header nav #dropdown .dropdown_list {
+    margin-top: 60px;
+}
+
+header nav #dropdown li {
+    text-align: center;
+    margin-top: 18px;
+    margin: 30px 0;
+}
+
+header nav #dropdown a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+
+}
+
+header #dropdown a:hover {
+    color: rgb(150, 150, 150);
+}
+
+
+
+/* DROPDOWN */
+
+
+header .backgroundimage {
+    background-image: url(Pictures/Home_Page.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 46vw;
+    width: 100%;
+}
+
+header nav img {
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+header nav .logo {
+    display: none;
+    text-align: center;
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    font-size: 10px;
+    padding: 4px;
+}
+
+header h1,
+.break {
+    color: #333333;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 5rem;
+    padding-top: 13%;
+    -webkit-text-stroke: #fff 2px;
+}
+
+header h1 .break {
+    font-size: 6rem;
+}
+
+/* HEADER  */
+
+
+/* MAIN */
+main h1 {
+    text-align: center;
+    color: rgb(61, 61, 61);
+    margin-top: 10vh;
+}
+
+main .types_of_works {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+main .types_of_works a {
+    padding: 80px;
+    margin: 20px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 400ms;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+main .types_of_works a:hover {
+    scale: 1.2;
+
+}
+main .types_of_works a:nth-child(1) {
+    background-image: url(Pictures/Sketches.jpg);
+}
+main .types_of_works a:nth-child(2) {
+    background-image: url(Pictures/Bronze\ works.jpg);
+}
+main .types_of_works a:nth-child(3) {
+    background-image: url(Pictures/Fibre_glass.jpg);
+}
+main .types_of_works a h3 {
+font-size: 10px;
+}
+
+
+
+
+main .about_the_artist {
+    display: grid;
+    place-items: center;
+    display: flex;
+    margin: 120px 50px;
+}
+
+main .about_the_artist img {
+    width: 250px;
+}
+
+main .about_the_artist div {
+    padding: 0 14px;
+    margin: 0 2vw;
+}
+
+main .about_the_artist div h1 {
+    text-align: left;
+    margin: 10px 0;
+    position: relative;
+    padding-bottom: 22px;
+}
+
+main .about_the_artist div h1::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(61, 61, 61);
+    height: 2px;
+    width: 210px;
+    left: 10px;
+    bottom: 15.5px;
+}
+
+main .about_the_artist div p {
+    color: rgb(0, 0, 0);
+
+}
+@media only screen and (max-width:900px){
+    main .about_the_artist img {
+        display: none;
+    }
+}
+/* MAIN */
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+.contact_list {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.contact_list ion-icon {
+    font-size: 34px;
+    color: #fff;
+    margin: 0 20px;
+    padding: 10px;
+  }
+
+.contact_list ion-icon:hover {
+    border-bottom: #fff 2px solid;
+}
+footer h4, h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+footer h5 {
+    padding: 10px 0;
+}
+
+
+
+/* FOOTER */
+
+@media only screen and (max-width:790px) {
+    header .backgroundimage {
+        height: 60vw;
+        padding-top: 20%;
+    }
+
+    header h1,
+    span {
+        font-size: 3rem;
+    }
+
+    header h1 span {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width:666px) {
+
+    header h1,
+    .break {
+        font-size: 3rem;
+    }
+
+    header h1 .break {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:608px) {
+
+    header h1,
+    .break {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width:532px) {
+    header nav .centered li {
+        display: none;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    header nav {
+        height: 50px;
+    }
+
+    header nav .logo {
+        display: initial;
+    }
+
+    header nav img {
+        display: initial;
+    }
+
+    header h1,
+    span {
+        font-size: 1.5rem;
+    }
+    .container div img {
+        width: 250px;
+        padding: 0;
+        margin: 10px 0px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width:450px) {
+
+    header .backgroundimage {
+        background-image: url(Pictures/Home_Page.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 94vw;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    header h1,
+    .break {
+        color: #fff;
+        font-family: "Raleway", serif;
+        font-size: 2rem;
+        padding-top: 13%;
+    }
+
+    header h1 .break {
+        font-size: 3rem;
+    }
+
+    header nav {
+        padding-bottom: 14px;
+        margin-top: -40px;
+    }
+
+    header nav img {
+        width: 50px;
+        padding: 5px;
+        cursor: pointer;
+    }
+    main .about_the_artist div {
+        padding: 0;
+        margin: 0 2px;
+    }
+    .container div img {
+        width: 200px;
+        padding: 0;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width:365px) {
+    main .types_of_works a {
+        padding: 60px;
+        margin: 20px;
+    }
+
+    main .types_of_works a:hover {
+        scale: 1.1;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+    main .about_the_artist div h1::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(44, 44, 44);
+        height: 2px;
+        width: 180px;
+        left: 0px;
+        bottom: 15.5px;
+    }
+    main .about_the_artist div {
+        padding: 0;
+        margin: 0 2px;
+    }
+}
+
+@media only screen and (max-width:280px) {
+    header .backgroundimage {
+        background-image: url(Pictures/Home_Page.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 94vw;
+        width: 100%;
+        margin-top: 40px;
+    }
+    header h1,
+    .break {
+        font-size: 1.7rem;
+        padding-top: 13%;
+    }
+
+    header h1 .break {
+        font-size: 2.7rem;
+    }
+}
+
+
+
+
+
+
+
+.gmail {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+    animation: move_in linear infinite 4s;
+}
+
+
+/* @keyframes move_in {
+    from {
+        margin-bottom: 10px;
+    }
+    to {
+        margin-bottom: 0;
+    }
+} */
+.gmail ion-icon {
+    color: red; 
+    font-size: 30px; 
+    background-color: #fff; 
+    padding: 10px; 
+    border-radius: 50%; 
+    box-shadow: 6px 8px 10px black; 
+    border: solid 2px red;
+}
+.gmail ion-icon:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+
+/* Developed by Kingpower Technologies */
