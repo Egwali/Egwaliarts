@@ -131,7 +131,7 @@ header #dropdown a:hover {
 
 
 header .backgroundimage {
-    background-image: url(Pictures/Home_Page.png);
+    background-image: url(Home_Page.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -206,13 +206,13 @@ main .types_of_works a:hover {
 
 }
 main .types_of_works a:nth-child(1) {
-    background-image: url(Pictures/Sketches.jpg);
+    background-image: url(Sketches.jpg);
 }
 main .types_of_works a:nth-child(2) {
-    background-image: url(Pictures/Bronze\ works.jpg);
+    background-image: url(Bronze\ works.jpg);
 }
 main .types_of_works a:nth-child(3) {
-    background-image: url(Pictures/Fibre_glass.jpg);
+    background-image: url(Fibre_glass.jpg);
 }
 main .types_of_works a h3 {
 font-size: 10px;
@@ -378,7 +378,7 @@ footer h5 {
 @media only screen and (max-width:450px) {
 
     header .backgroundimage {
-        background-image: url(Pictures/Home_Page.png);
+        background-image: url(Home_Page.png);
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
@@ -451,7 +451,7 @@ footer h5 {
 
 @media only screen and (max-width:280px) {
     header .backgroundimage {
-        background-image: url(Pictures/Home_Page.png);
+        background-image: url(Home_Page.png);
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
